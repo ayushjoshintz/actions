@@ -42,7 +42,7 @@ jobs:
           AZURE_VM_USERNAME: ayush
           AZURE_VM_PASSWORD: Netsmartz@123!
         run: |
-          sshpass -p "$AZURE_VM_PASSWORD" scp -o StrictHostKeyChecking=no -r ./ $AZURE_VM_USERNAME@$AZURE_VM_IP:/home/ayush/actions/
+          sshpass -p "$AZURE_VM_PASSWORD" scp -o StrictHostKeyChecking=no -r testfile $AZURE_VM_USERNAME@$AZURE_VM_IP:/home/ayush/actions/
 
       
   
